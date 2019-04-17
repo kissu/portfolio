@@ -4,8 +4,8 @@
       alt="Author image"
       class="author__image"
       src="~/assets/images/author.jpg"
-      width="180"
-      height="180"
+      width="360"
+      height="360"
       blur="5"
     />
 
