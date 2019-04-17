@@ -1,12 +1,12 @@
-// This is where project configuration and plugin options are located. 
+// This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome Blog Starter',
-  siteDescription: 'A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.',
+  siteName: 'Konstantin BIFERT',
+  siteDescription: 'A fresh slav webdev passionated by the JavaScript ecosystem. Full time Japan lover, keyboard nerd and sometimes, tryharding some games.',
 
   plugins: [
     {
