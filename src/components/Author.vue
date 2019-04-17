@@ -22,7 +22,7 @@
     <p class="author__links">
       <a href="//twitter.com/kissu_io" target="_blank">twitter</a>
       <a href="//github.com/kissu" target="_blank">github</a>
-      <a href="mailto:hello@kissu.io" target="_blank">email</a>
+      <a href="mailto:contact@kissu.io" target="_blank">email</a>
     </p>
   </div>
 </template>

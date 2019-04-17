@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/22e85781-2e68-4068-924b-e762453fd500/deploy-status)](https://app.netlify.com/sites/modest-dubinsky-352e8d/deploys)
+
 # Gridsome Blog Starter
 
 > A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
