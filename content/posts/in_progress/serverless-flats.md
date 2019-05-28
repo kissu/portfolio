@@ -24,6 +24,8 @@ Then add some basic functions make sure that a post into slack works properly.
 
 `firebase functions:config:get` then `firebase functions:config:set slack.webhook_url="https://hooks.slack.com/services/cool/hash"`
 
+[Nice documentation](https://api.slack.com/docs/message-attachments) on how to send a fancy slack message
+
 [functions/config-env](https://firebase.google.com/docs/functions/config-env)
 
 To run the code locally, simply run `firebase emulators:start --only functions` (more details can be found [here](https://firebase.google.com/docs/functions/local-emulator))
