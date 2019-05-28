@@ -27,3 +27,6 @@ Then add some basic functions make sure that a post into slack works properly.
 [functions/config-env](https://firebase.google.com/docs/functions/config-env)
 
 To run the code locally, simply run `firebase emulators:start --only functions` (more details can be found [here](https://firebase.google.com/docs/functions/local-emulator))
+
+
+[SeLoger API](http://ws.seloger.com/) has moved apparently, so it will be hard to continue furhter... :(
