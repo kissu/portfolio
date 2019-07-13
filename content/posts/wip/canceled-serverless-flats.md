@@ -65,3 +65,8 @@ Maybe try to find out how to [debug](https://medium.com/@mwebler/debugging-fireb
 To set your entire `functions/.env-production.json` env variables, use this command line `firebase functions:config:set app="$(cat .env-production.json)"` and check if it's ok with `firebase functions:config:get`.
 
 If you failed somehow, you can still unset it with `firebase functions:config:unset app.firebase_chromium_exe_path` for example.
+
+DO NOT forget to reset the env variables if you were sick or were in a training because it will not do it by itself !
+
+To add a Slack webhook, click on your workspace name, then `Administration` > `Manage apps`. In the opened browser window, go to `Apps` marketpage and type `Incoming WebHooks`. Add the configuration by binding it to one of your existing channels.
+And you should get your Slack WebHook !
