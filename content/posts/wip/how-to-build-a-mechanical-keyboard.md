@@ -8,6 +8,7 @@
 - Plate: metalic part that will make your typing experience more sturdy
 - Stabs: kind of long wires for longer keys, they are used for backspace, shift(s) or enter keys
 - USB cable: can be handy if your keyboard is not wireless
+- [keycaps](https://www.banggood.com/AKKO-World-Tour-Tokyo-114-Keys-Cherry-Profile-Dyesub-PBT-Keycaps-Keycap-Set-for-Mechanical-Keyboard-p-1411856.html?akmClientCountry=FR&&cur_warehouse=USA)
 
 And that is pretty much what you do actually need for a basic keyboard.
 
@@ -21,3 +22,11 @@ Of course, you can add a lot more stuff depending on what you're looking for and
 - [sorbothane](https://www.amazon.com/gp/product/B019GBMG14/ref=ox_sc_act_title_2?smid=A1EPE8IE7JPHY4&psc=1): the most efficient (and expensive) foam to dampen the sound of a KB, neoprene inside of keycap modifiers may maybe help too
 - [brushes](https://www.amazon.com/gp/product/B072BM21NV/ref=ox_sc_act_title_1?smid=A2607QEGM8G1T2&psc=1): to apply lube
 - [switch films](https://txkeyboards.com/en/products/switch-films-intl-detail): to reduce wobble and make switches more consistent
+
+[sorbothane](https://www.amazon.com/Isolate-Sorbothane-Acoustic-Vibration-Damping/dp/B019GBMG14/ref=sr_1_7?keywords=sorbothane&qid=1561179209&s=gateway&sr=8-7)
+[cheaper alternative to sorbothane](https://www.amazon.fr/SilverStone-SST-SF01-Isolation-acoustique-dordinateur/dp/B0044UZWL4/ref=sr_1_3?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=Silverstone+acoustique&qid=1561589303&s=gateway&sr=8-3)
+[keycaps](https://www.banggood.com/AKKO-World-Tour-Tokyo-114-Keys-Cherry-Profile-Dyesub-PBT-Keycaps-Keycap-Set-for-Mechanical-Keyboard-p-1411856.html?akmClientCountry=FR&&cur_warehouse=USA)
+[superlube pour les stabs](https://www.amazon.fr/Multipurpose-synth%C3%A9tique-bas%C3%A9-sur-graisse/dp/B00C5014K8/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=multipurpose+graisse&qid=1562943680&s=gateway&sr=8-1)
+[vis nylon](https://www.amazon.fr/sourcingmap%C2%AE-Phillips-Nylon-croix-pi%C3%A8ces/dp/B012TAFF58/ref=sr_1_fkmr3_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=tete+philips+tete+croix+nylon&qid=1562943741&s=gateway&sr=8-1-fkmr3)
+[pinceaux](https://www.amazon.fr/Artists-Modelmakers-Extra-Detail-ArtMaster/dp/B00A39DAMS/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=modelmakers+set+of+8+artmaster&qid=1562943790&s=gateway&sr=8-1)
+[alternative, 1 seul](https://www.amazon.fr/Princeton-Art-Brush-SP-5-Brush-Spotter/dp/B0043GCYTW/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=synthetic+brush&qid=1562943831&s=gateway&sr=8-1)
