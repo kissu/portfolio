@@ -1,0 +1,31 @@
+{
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "csharp",
+    "css",
+    "git-commit",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "json5",
+    "jsonc",
+    "less",
+    "markdown",
+    "php",
+    "pug",
+    "restructuredtext",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "vue-html",
+    "yaml",
+    "yml"
+  ]
+}
