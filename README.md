@@ -44,3 +44,4 @@ sorbothane: 28cm longueur, 9cm largeur
 
 ====
 why not soldering
+check some more feedback on Discord (https://discordapp.com/channels/364402715545174027/597815028715880468/600917537487716352)
