@@ -29,3 +29,18 @@ https://gridsome-starter-blog.netlify.com
 2. `cd my-gridsome-site` to open folder
 3. `gridsome develop` to start local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
+
+notes from my phone
+
+where to put stabs, qmk config source link
+bien join les stabs en les serrant
+remove details, or make it smaller at least ?
+avertir que c'est mon propre build
+base minimale de compréhension appréciée
+ajouter/supprimer photos
+why remove pins, may be usefull for plateless builds
+
+sorbothane: 28cm longueur, 9cm largeur
+
+====
+why not soldering
