@@ -3,7 +3,7 @@ title: How to build a mech keyboard
 date: 2019-10-09
 published: true
 tags: ['Mech keebs']
-cover_image: https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
+cover_image: https://i.imgur.com/fuDfDkC.png
 description: "We will see how to build your first mechanical keyboard"
 ---
 
@@ -305,8 +305,8 @@ Il y a peut-être d'autres moyens + propres. Mais dans tous les cas, cela reste 
 
 ## Result 💮
 ![Front keyboard](build-kb/result.jpg)
-![Sideways keyboard](build-kb/sideways_result.jpg)
-![Beautiful 60%](build-kb/result_60.jpg)
+<!-- ![Sideways keyboard](build-kb/sideways_result.jpg) -->
+<!-- ![Beautiful 60%](build-kb/result_60.jpg) -->
 > Congratz for your first build ! 🎊
 
 ## Misc stuff

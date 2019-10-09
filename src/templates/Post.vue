@@ -10,11 +10,7 @@
 
     <div class="post content-box">
       <div class="post__header">
-        <g-image
-          alt="Cover image"
-          v-if="$page.post.coverImage"
-          :src="$page.post.coverImage"
-        />
+        <g-image alt="Cover image" v-if="$page.post.coverImage" :src="$page.post.coverImage" />
       </div>
 
       <div class="post__content" v-html="$page.post.content" />
@@ -33,28 +29,28 @@
 </template>
 
 <script>
-import PostMeta from "~/components/PostMeta";
-import PostTags from "~/components/PostTags";
-import Author from "~/components/Author.vue";
+import PostMeta from '~/components/PostMeta'
+import PostTags from '~/components/PostTags'
+import Author from '~/components/Author.vue'
 
 export default {
   components: {
     Author,
     PostMeta,
-    PostTags
+    PostTags,
   },
   metaInfo() {
     return {
       title: this.$page.post.title,
       meta: [
         {
-          name: "description",
-          content: this.$page.post.description
-        }
-      ]
-    };
-  }
-};
+          name: 'description',
+          content: this.$page.post.description,
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <page-query>
