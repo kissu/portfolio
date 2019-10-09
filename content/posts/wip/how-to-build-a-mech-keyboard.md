@@ -21,24 +21,22 @@ That's why, until I do write one, I can recommend the one done by [Drop](https:/
   - [Get the parts](#get-the-parts)
   - [Presentation des composants](#presentation-des-composants)
     - [Switchs](#switchs)
-      - [Petit rappel du dessous d'un switch](#petit-rappel-du-dessous-dun-switch)
-    - [PCB](#pcb)
-  - [Verification du PCB](#verification-du-pcb)
-  - [Mise en pratique](#mise-en-pratique)
-    - [Clip des switchs](#clip-des-switchs)
-    - [Modding des stabs](#modding-des-stabs)
-      - [[Facultatif mais très recommandé] Clip + lube](#facultatif-mais-tr%c3%a8s-recommand%c3%a9-clip--lube)
-      - [[Facultatif] Band-aid](#facultatif-band-aid)
-  - [Partie finale](#partie-finale)
-    - [Mise en place des switchs](#mise-en-place-des-switchs)
-      - [[Facultatif mais très recommandé] Matière anti-acoustique](#facultatif-mais-tr%c3%a8s-recommand%c3%a9-mati%c3%a8re-anti-acoustique)
-    - [Montage dans le boîtier](#montage-dans-le-bo%c3%aetier)
+      - [Quick reminder of our build](#quick-reminder-of-our-build)
+    - [Quick overview of the PCB](#quick-overview-of-the-pcb)
+  - [Checking the PCB](#checking-the-pcb)
+  - [Time to build](#time-to-build)
+    - [Clipping the switches](#clipping-the-switches)
+    - [Modding the stabs (or _stabilizers_)](#modding-the-stabs-or-stabilizers)
+      - [[Optionnal but highly recommended] Clip + lube](#optionnal-but-highly-recommended-clip--lube)
+      - [[Optional] Band-aid](#optional-band-aid)
+  - [Final rush](#final-rush)
+    - [Putting all the switches in place](#putting-all-the-switches-in-place)
+    - [Mounting it into the case](#mounting-it-into-the-case)
     - [Keycaps](#keycaps)
-  - [Resultat 💮](#resultat-%f0%9f%92%ae)
-  - [Divers](#divers)
-    - [Comment flasher mon PCB ?](#comment-flasher-mon-pcb)
-    - [Besoin d'aide / réclamation / autre ?](#besoin-daide--r%c3%a9clamation--autre)
-        - [Todo](#todo)
+  - [Result 💮](#result-%f0%9f%92%ae)
+  - [Misc stuff](#misc-stuff)
+    - [How to flash your PCB ?](#how-to-flash-your-pcb)
+    - [What's next ?](#whats-next)
 
 ## Get the parts
 **Disclaimer**: So, the initial thing will be to fetch the needed components. For that, I've already did the job of choosing something decent. Take note that price-wise, you can start at 150$ and go beyond 1000$.
@@ -115,189 +113,188 @@ From top to bottom, we do have:
 - `x10 Rosélios 67g`: linears and silent but **pinky** ! (yes, pure design)
 
 
-**For our build, we gonna use some Zilent 65 and 78g because of their smoothness and silence.**
+**For our build, we gonna use some Zilent 65 and 78g because of their smoothness and silence.** 😴
 
 Oh and you can use any other _common_ switch too (if it's `MX cherry` compatible).
 
 ---
-#### Petit rappel du dessous d'un switch
+#### Quick reminder of our build
 
-![Dessous d'un switch](build-kb/switch_details.png)
+![Exploded internals of a keyboard](build-kb/new_photos/exploded_keeb_internals.png)
 
-Nous avons la partie centrale, qui permettra au `stem` de plonger au fond du switch (et qui sert aussi de support une fois dans le PCB).
+From bottom to top.
 
-Les 2 pins noirs en plastique sur le côté peuvent être sectionnés avec une pince coupante et ne servent essentiellement qu'à ajouter un peu de stabilité (en pratique, c'est inutile).
+At first comes the case, it will essentially impact the sound and the feel. It can be of various price depending of the quality of the materials (and it's thickness).
 
-Les 2 pins métalliques qui permettent de fermer le circuit électrique du PCB lorsque vous actionnez le switch.
+Then comes some kind of dampening foam to absorb the sound propagated during a keystroke.
 
-### PCB
-Maintenant, passons au PCB.
+Then, our beautiful and programmable PCB. Responsible for a lot of awesome workflow (with QMK).
 
-Regardons le devant du PCB dans un premier temps.
-![Devant du PCB](build-kb/front_pcb.jpg)
-En rose nous avons notre port USB-C.
+The stabilizers are above the plate in the schema but they actually need to be mounted before the plate (even if the PCB is hotswappable). They are used on bigger keys like `Caps lock` and `Left Shift`, that may lean on one side of the switch without it when pressed, because a single switch is used for a single keycap (aka `1u`) by nature.
 
-En bleu nous avons les différentes localisations pour monter notre PCB dans notre case avec les vis dorées (fournies), ainsi que leur ordre.
+You can follow that [Keycap Ruler link](https://keycap-ruler.com) and compare it to your own keycap location. A stab is usually used on keys that are `2u` or above.
 
-En rouge, vous avez une des nombreuses LED qui composent ce PCB. Si c'est votre tasse de thé, vous serez servis ici !
+Something similar may be found on the [QMK config](https://config.qmk.fm/#/dztech/dz60rgb/LAYOUT) after toggling on `show key sizes` on the right's side navbar (with the gear on it).
 
-En vert, vous avez l'endroit où s'insère le `stem`.
+The plate arrives next. It's not mandatory by itself but we will use one in our build. Usually, people tend to go "plateless" for more robust typing feedback. The plate helps keeping the switches sturdy on place, to not let them wobble or simply pop off.
 
-En orange, les fameux emplacements pour les pins en plastique. En pratique, on ne va pas rien y introduire donc.
+The most important part, are of course the switches. Feeling, sound, feedback are some of the most noticeable things about them. Notice that in our build, we do not need to solder, which is a great way of winning some time and avoid further issues.
 
-En jaune, les emplacements pour les pins métalliques.
+Finally, do come the keycaps that suit your texture feel, profile shape, colors and theme. Quite as much important as the switches since they will be in direct contact with your fingers.
 
-![Arriere du PCB](build-kb/back_pcb.jpg)
-Pour ce qui est de l'arrière, vous n'aurez pas besoin de connaître beaucoup de transistors ou quoi que ce soit.
+> PS: I personally do hate  Signature Plastic ABS plasic on SA profile keycaps. But it is really, a personnal taste at the end of the day. 👌
 
-Il suffit juste de connaître le switch indique en bleu, qui pourra servir à flasher le PCB en le passant en position `BL` (BootLoader). Mais on verra qu'il y a une autre solution aussi.
+### Quick overview of the PCB
 
-En rouge, vous pouvez observer les sockets hot swappables de chez Kailh. Ces petits embouts nous permettront **de ne pas avoir besoin de souder**, il suffira juste de plug le switch dedans !
+![Front of the PCB](build-kb/front_pcb.jpg)
+In pink, we do have our USB-C port.
 
-## Verification du PCB
-Bon, maintenant passons a la verification du PCB en vérifiant que tout marche bien !
+In blue (follow the numbers order), are our locations when screwing the PCB into the case.
 
-Pour cela, allez sur votre ordinateur, branchez le PCB en USB et allez à [cette adresse](https://config.qmk.fm/#/test) pour vérifier que tout marche comme il faut.
+In red, we do have the RGB LED, if it's your thing. 😏
 
-Il vous suffit pour cela de fermer le circuit à l'aide de votre pincette entre les 2 trous qui vont accueillir les pattes du switch. Vous devriez voir les touches s'illuminer au fur et à mesure que vous avancez.
+In green, it's the location of the switch's `stem`.
 
-![Testons le PCB](build-kb/test_pcb.jpg)
-Si jamais certains des 4 endroits indiqués par la flèche ne correspondent pas à ce que vous voulez, pas de panique. Idem si certains d'entre eux ne font rien, il peuvent en effet s'apparenter à une touche `Fn`.
+In orange, are the slots for the little plastic pins of a switch, we will cut them just in a few seconds. They may be useful for some plateless build but since we do have a plate and are planning (sometime at least) to remove our switches to try some other ones, they are not so clutch.
 
-Le but du jeu étant de vérifier que les circuits classiques sont ok !
+In yellow are the slots for the metallic pins that are making the contact when the switch's internals hit the leaf (during a keystroke).
 
-Si jamais vous n'avez aucun signal et que votre interrupteur au dos est en position `Normal`, vous avez peut-être un soucis et il faudra dans ce cas flasher votre PCB.
+![Back of the PCB](build-kb/back_pcb.jpg)
+For this part, no need to know a lot of things really.
 
-Voir [ici](#Comment-flasher-mon-PCB) pour la procédure à suivre.
+The switch button shown in blue can be useful thought. It's used to flash the PCB (essentially at the beginning) by setting it's position to `BL` (BootLoader). We will bind a key press for that feature after the first flash. 👼
 
-## Mise en pratique
+In red, we do have the Kailh sockets. Those are the ones that allow us to not **have to solder**. You simply need to fit the switch inside of it and tada ! 🎊
 
-### Clip des switchs
+Meanwhile, be careful to do it on a flat table surface to not pop off the solder socket 😱 (may happen if you force 💪 at the same time as holding it with one hand mid-air).
+
+## Checking the PCB
+Time to check if the PCB is working as expected. Usually they are totally fine.
+
+For that, go to your computer, plus the PCB with the USB port and go to that [link](https://config.qmk.fm/#/test) to check if everything is fine.
+
+For that, close the circruit with some metallic twizzers by shorting the 2 little holes (for the switch's metallic pins). You may notice that the various letters of the keyboard may light when you do that.
+
+![Testing the PCB](build-kb/test_pcb.jpg)
+If some of the slots shown by the 4 blue arrows are not corresponding to what you'd expect on the screen, do not panic. Some may even not trigger anything at all because used as a `Fn` key.
+
+The goal is to check that those basic circuits are fine !
+
+If nothing is happening and your BootLoader switch is in the `Normal` position, it may be an issue. But before sending it back, let's try to flash the PCB.
+
+I'll write a tutorial soon, on how to do it on Windows, MacOS and Linux. Stay tuned.
+
+## Time to build
+
+### Clipping the switches
 
 ![Clipped switches](build-kb/clipped_switches.jpg)
-> Vous vous souvenez des 2 pattes inutiles d'un switch présentés plus haut ? Eh bien nous allons a présent nous en débarrasser à l'aide d'une pince coupante !
+> Cut those plastic legs !
 
-![Clipped switches de profil](build-kb/clipped_switches2.jpg)
-> Voici une autre vue de profil pour mieux voir le résultat.
+![Clipped switches sideways](build-kb/clipped_switches2.jpg)
+> Sideways POV.
 
 ![Switchs restants](build-kb/clip_them_all.jpg)
-> Allez, plus que quelque uns !
+> Some more to go. 👩‍🏭
 
-### Modding des stabs
-Les stabilisateurs (ou _stabs_) sont utilisés pour des keycaps un peu plus longs.
-Nous allons nous occuper de ceux-ci.
-Les 4 petits serviront essentiellement pour les key suivants:
+### Modding the stabs (or _stabilizers_)
+The 4 little ones will be used for:
 - `(left) shift`
 - `backspace`
 - `enter`
 - `(right) shift`
 
-Le plus long sera lui pour la `spacebar`.
+The biggest one will be for the `spacebar`.
 ![stabs](build-kb/stabs.jpg)
 
-Nous allons d'abord commencer par les démonter, en douceur.
-![Stab de profil](build-kb/stab_side2.jpg)
-> Forcez un peu sur cette partie là afin de séparer les 3 parties.
+So, we gonna start by opening them gently (remove the wire from the plastic elbow).
+![Stab sideways](build-kb/stab_side2.jpg)
 
-Prenez maintenant la partie qui était à l'intérieur.
-![Clipez celui-la](build-kb/clipped_stabs.jpg)
-> Il faut ici couper les 2 petites pattes qui ne servent à rien de bon. Grâce à cela, votre stab sera davantage silencieux, s'abîmera moins et durera plus longtemps !
+It's time to clip those small little plastic legs too. That way, your stab will rattle less, will last longer and it will help the overall quietness.
+![Clip those](build-kb/clipped_stabs.jpg)
 
-#### [Facultatif mais très recommandé] Clip + lube
-Nous allons maintenant mettre un peu de lubrifiant pour éviter les frottements.
-![Superlube + pinceau](build-kb/superlube.jpg)
-Prenez votre `Superlube` et votre pinceau préféré. Il faut juste qu'il ne soit pas trop épais, ici j'ai du `5/0`.
+#### [Optionnal but highly recommended] Clip + lube
+Gonna lube a bit, to prevent friction.
+![Superlube + paintbrush](build-kb/superlube.jpg)
+Take your `Superlube` and your `5/0` sized paint brush. 🖌
 
-Trempez le bout du pinceau dans le tube et enlevez le surplus de lubrifiant: il faut une toute petite couche.
+Dip the tip of the brush into the tube, but don't take too much of it, only a small layer is needed.
 
-S'il faut retenir quelque chose de cette partie, c'est que: **il vaut mieux mettre pas suffisamment de lubrifiant, qu'en mettre trop** !
+The most important thing to get here is that: it's far better to **have less lube, that to have too much of it**. Trust me, if you overlube it, you will get a bad result too and it will be a _PITA_ to remove, so keep it light. 🍃
 
-En effet, si vous sur-lubrifiez, le résultat aura l'effet contraire de ce à quoi vous vous attendez. Puis il vous faudra tout démonter et essuyer avec de l'essuie-tout proprement, donc...essayez d'avoir la main légère.
+![Inside of the stab](build-kb/lubed_stab.jpg)
+> Put a **very thing** lube on this wall, just enough to get it a bit shiny. Do the same for the opposite wall. 😉
 
-![Interieur du stab](build-kb/lubed_stab.jpg)
-> Il faut donc mettre une **très fine** couche de lubrifiant sur cette paroi, juste ce qu'il faut pour qu'elle soit brillante.
+Gonna lube the metallic wire that will make contact and potentially rub against everything. Here, you can apply a bit more of lube (essentially for the spacebar).
+![Lube the wire](build-kb/lubed_stab4.jpg)
+> Put it pretty much everywhere, essentially on the elbow.
 
-N'oubliez pas la paroi opposée bien sur. 😉
+To get it back, look for the correct side.
+![Put the stab back](build-kb/stab_side.jpg)
 
-Ensuite, il faut lubrifier la tige métallique qui va venir se frotter un peu partout. Ici, vous pouvez mettre un peu plus de lube (surtout si c'est pour la spacebar).
-![Lube le wire](build-kb/lubed_stab4.jpg)
-> Il en faudra un peu partout et surtout au niveau du coude où y aura pas mal de frottements.
+Here, we gonna need to:
+1. put back the little part on the correct side, inside of the base
+2. slide the wire into the bottom hole and double check that it is going deep enough
+3. clip it on the elbow, as it's initial position
 
-Pour le remettre, vous avez pu voir que la partie intérieure a 2 faces: une avec 1 trou et l'autre avec 2.
-![Remettre les parties du stab](build-kb/stab_side.jpg)
-
-Ici, il faudra:
-1. remettre la petite partie dans le bon sens, à l'intérieur de la base
-2. glisser la tige dans le trou du bas et veiller à ce qu'il arrive au bout de la pièce intérieure
-3. clipser le tige au niveau du coude comme à son état initial
-
-Voilà, vous devriez maintenant avoir tous les stabs `clipped` et `lubed` ! 🎊
+Tada, you should have some `clipped` and `lubed` stabs by now! 🎊
 ![Clipped & lubed stabs](build-kb/all_lubed_stabs.jpg)
 
-On va maintenant les viser au PCB grâce aux vis fournies et aux rondelles en plastiques (ces dernières sont utilisées afin d'éviter de créer un court-circuit avec le PCB et les vis).
+We are going to screw them into the PCB thanks to the screws present in our package. It is used essentially to prevent a short.
 
-> On peut acheter et utiliser des vis en nylon aussi. Pratique si on n'a pas de rondelles sous la main et qu'on veut un truc un peu plus solide.
+Oh and be careful of the **orientation** of the stabs, because there is one ! We are going to mount them as shown above. 👆
 
-Je tiens à attirer votre attention sur le **sens** des stabs. Pour le layout classique ANSI que l'on build ici, il nous faudra les monter comme cela sur le PCB, ne vous trompez pas ! 😱
-
-#### [Facultatif] Band-aid
+#### [Optional] Band-aid
 
 <details>
-<summary>Cliquez ici pour développer cette partie</summary>
+<summary>Click here to expand</summary>
 
-Nous allons voir comment faire un autre petit mod maintenant, à savoir le `bandaid` mod (`+ de silence`).
+We are going to make another mod now, aka the `bandaid` one (for more silence, again).
 
-Cela consiste simplement à découper un morceau de pansement, le lubrifier (toujours avec la `Superlube`) et le coller au bon endroit sur le PCB.
+It consists of cutting a small amount of pad, lube it (with the `Superlube` again) and stick it to the correct place on the PCB.
 
-![Emplacement des pansements](build-kb/pcb_bandaid.jpg)
-> Voici l'emplacement. Veillez surtout à ce que la largeur de la bande soit assez épaisse afin que le stab qui viendra taper sur le PCB soit amorti.
+![Location of the pads](build-kb/pcb_bandaid.jpg)
+> Watch out to have the width of the pad to be large enough because this is the part responsible for the stab damping.
 
-![Pansement lubrifie](build-kb/bandaid_close.jpg)
-> Voici, avec le lubrifiant. Il faut que le pansement change un petit peu de couleur pour savoir s'il y a suffisamment de lubrifiant.
+![Lubed pad](build-kb/bandaid_close.jpg)
+> Done, with the lube. You can also check out that the lube is changing color - means that there is enough of lube.
 </details>
 
 ---
-C'est le moment de monter le tout !
-![Vissage des stabs](build-kb/stabs_screwed.jpg)
-> Rien de complexe ici. Passez les pattes en plastique dans les fentes dans un premier temps.
->
-> Puis les autres, mettez une rondelles puis vissez !
+Time to mount it all !
+![Screwing the stabs](build-kb/stabs_screwed.jpg)
+> Nothing specific here, pass through the plastic legs and screw the stabs into the indicated slots.
 
-![Stabs montes](build-kb/installed_stabs.jpg)
-> Voici le rendu que ca devrait avoir une fois tous les stabs montés (et entièrement modés).
+![Stabs mounted](build-kb/installed_stabs.jpg)
+> This is how it should look like with all the stabs modded and mounted.
 
-Vous pouvez maintenant monter quelques switchs dans les coins (histoire d'appliquer une force constante sur la plate, pour ne pas la tordre) afin de tester les stabs.
-![Testez vos keycaps](build-kb/switches_plate.jpg)
-Pour mettre en place vos switchs, pensez à mettre du papier bulle en dessous (celui que vous avez reçu dans la boite fera très bien l'affaire).
+You could now mount some switches in the corners to apply some equal force (to not bent the plate).
+![Plate with switches](build-kb/switches_plate.jpg)
+During the switches insertion, you can also put some bubble wrap under below it (the one received in the package will be totally fine for that job).
 
-⚠️ En effet, ce PCB hot swappable est très bien mais les gens recommandent de ne pas insérer les switchs en le tenant en main (sinon, vous pourriez démonter les sockets et...il faudrait sortir le fer à souder dans ce cas là...). Posez donc votre PCB à plat et appuyez fermement sur le switchs en visant bien les trous adéquats !
+⚠️ Indeed, I remember you that even if the hotswappable sockets are already soldered, they may break off if there is too much (uneven) force applied on it (like when holding it mid-air). So, if you don't want to get out the soldering iron, keep easy on that part.
+Oh and second little warning, did you noticed the 2 reversed holes on the top left ? 🌵⚠️ (it's because of the USB port)
 
-⚠️ Warning 2.0 ⚠️ Faites aussi attention aux 2 emplacements tout en haut à gauche, il sont inversés, en raison de la présence du port USB.
-
-Si jamais vous tordez vos pins en métal (ceux du switch), ce n'est pas bien grave. Vous pourrez les remettre droits à l'aide d'une pince. 😉
+If you ever twist some of the metallic legs of a switch, you can put them back with your finger or a plier.
 
 ---
-Vous pouvez monter quelques keycaps dès maintenant histoire de tester les stabs. Ca vous évitera de le faire plus tard si jamais vous avez mal monté/mis trop de lube/autre et vous pourrez en outre apprécier le doux son de vos stabs parfaitement moddés.
+You can now mount some keycaps right now to try out the stabs. It will allow you to not have to get back to them once everything is mounted. On top of enjoying the tasty sound, they are doing. 👌
 
-Pour les monter, il suffit juste de l'enfoncer comme si vous écrasiez le switch, pas de crainte à avoir ici ! 😄
+To mount the keycaps, firmly press on it, like if it's your first time trying to escape VIM by pressing the `esc` key. 😉😆
 
-## Partie finale
+## Final rush
 
-### Mise en place des switchs
-Il vous suffit maintenant de mettre tous vos switchs dans les emplacements dédiés.
-![Vos super switchs](build-kb/switches_in_place.jpg)
-> Vous pouvez mettre comme moi, des switchs un peu plus lourds sur certaines touches si vous voulez. Préférence personnelle !
+### Putting all the switches in place
+Now, put all of your lovely switches.
+![Your tasty switches](build-kb/switches_in_place.jpg)
+> You can like me, put some heavier ones (dark blue colored) on some keys. Personnal preference.
 
 ![Switch army](build-kb/aligned_switches.jpg)
-> Faites cependant attention à ce que tous les switchs soient bien mis en place comme des petits soldats, que la haut de la plate soit bien au niveau de la partie en butée du switch et que tout est bien enfoncé, sans torsion quelconque.
->
-> Vous pouvez refaire une passe et contrôler sur votre PC, comme plus haut, que tous les switchs marchent toujours correctement.
+> Check that all the switches are **perfectly** aligned and firmly stuck in the plate, in the good position, without any twist. You can also double check your `PCB` on your computer at this point if you wish, to be sure that every key will be functionnal at the end.
 
-Vous pouvez dès à présent mettre le tout au fond de votre joli case en alu.
+Time to put everything in your aluminium case now.
 
-Si cependant, vous souhaitez faire un dernier mod (pour encore + de silence) avant, lisez ce qui suit.
-
-#### [Facultatif mais très recommandé] Matière anti-acoustique
+<!-- #### [Facultatif mais très recommandé] Matière anti-acoustique
 <details>
 <summary>Cliquez ici pour développer cette partie</summary>
 Quand vous allez taper sur votre joli boitier en alu, il y aura des vibrations qui vont se propager un peu partout dans le vide, entre le fond du boitier et votre PCB.
@@ -318,59 +315,46 @@ Il y a peut-être d'autres moyens + propres. Mais dans tous les cas, cela reste 
 
 ![Résultat final de la découpe](build-kb/sorbothane2.jpg)
 > Tada ! Pas fameux hein...? Mais ca donne un ordre d'idéee sur les découpes nécessaires et ca vous donne un visuel du rendu !
-</details>
+</details> -->
 
-### Montage dans le boîtier
-![Plus qu'a monter !](build-kb/before_pcb.jpg)
-> Il ne reste plus qu'à doucement glisser le tout dans le boitier en passant l'encoche USB en premier.
->
-> ⚠️ Vérifiez bien que le switch situé au dos du PCB dont on parle [ici](#PCB) est sur la position **NORMAL**.
+### Mounting it into the case
+![Almost done](build-kb/before_pcb.jpg)
+> Now, put the PCB in place by passing the USB part in first. Also, double check that the Bootloader swtich is in the **NORMAL** position. 🙏
 
-![Plus qu'a visser](build-kb/screw_plate.jpg)
-> Il suffit maintenant de viser aux endroits indiqués plus haut en y allant **tout doucement**: il faudrait pas casser le PCB a ce stade en forçant comme un bourrin...
->
-> Utilisez bien les vis dorées et voici un [rappel de l'ordre](#PCB) si jamais vous en avez besoin !
+![Screw time](build-kb/screw_plate.jpg)
+> Screw **gently** (to not break the PCB). Use the golden screws and aim for the correct locations (can be found [here](#PCB) if you forgot).
 
 ### Keycaps
-![Montage des keycaps](build-kb/time_to_keycaps.jpg)
-> Le plus facile maintenant ! Montez vos super keycaps en appuyant bien au fond pour que le `stem` du switch s'enfonce bien au fond de la keycap.
->
-> Oh et pensez aussi que toutes les lignes (celle des chiffres, Qwer, Asdf, Zxcv, Ctrl) ont un profil bien spécial donc ne les intervertissez pas si vous ne voulez pas avoir une expérience bizarre au toucher.
+![Mounting the keycaps](build-kb/time_to_keycaps.jpg)
+> Same as before, put the reamining keycaps in place by pressing them firmly. Try to respect the `rows` too ! Indeed, the row of `QWERTY` and ``` `12345 ``` have some specific profile, and as so, you cannnot interchange them or you will have a hell of a strange typing experience.
 
-## Resultat 💮
+## Result 💮
 ![Clavier de face](build-kb/finish1.jpg)
 ![Profil du clavier](build-kb/finish2.jpg)
 ![Joli 60%](build-kb/finish3.jpg)
-> Félicitations pour votre premier build ! 🎊
+> Congratz for your first build ! 🎊
 
-## Divers
-Quelques dernières petites choses.
+## Misc stuff
+Some more stuff.
 
-![Pads antiderapanta](build-kb/back_case.jpg)
-> N'oubliez pas de monter les petits pads antidérapants histoire de ne pas abimer votre boitier et aussi pour avoir davantage de grip sur le bureau.
+![Non-skid legs](build-kb/back_case.jpg)
+> Do not forget to put your non-skid legs under your case, it will help you get more grip and will protect your case.
 
-> PS: Le petit trou dans le boîtier sert à appuyer sur un bouton au dos du PCB. Nous n'en avons pas besoin ici car notre PCB se flash d'une autre façon (il n'y a donc aucun bouton a cet emplacement), le boitier est juste prévu pour être universel et s'adapter au plus grand nombre de PCB.
+> PS: The small hole in the case is essentially used to flash the PCB by triggering a specific button. We don't really care of that one since we will flash it in another way (so don't worry about it). It here because it's a universal case with a large compatibility with other PCBs.
 
-### Comment flasher mon PCB ?
-_"Ok, c'est bien beau d'avoir un clavier mais comment je custom les macros, mapping, règle la RGB etc moi ??"_
+### How to flash your PCB ?
+_"Ok dude, it's fine and all but how do I actually custom my keeb with some fancy marcos, mapping, l33t RGB ???"_
 
-Cela dépend de votre OS dans un premier lieu et...je vais vous rediriger vers un autre guide car celui-la est basé sur le build d'un méca, puis il est deja suffisamment long comme ca.
+It gonna depend of your OS in first place, let's say that it's really simple on MacOS, simple enough on Linux and annoying on Windows. I will do a guide soon for the 3 OSes.
+Until then, you can follow the somewhat messy [official guide](https://docs.qmk.fm/#/newbs_getting_started?id=set-up-your-environment).
 
-Voici un [lien vers une playlist](https://youtu.be/VR53Wo9Z960?list=PLZlceRZZjRugJFL-vnenYnDrbMc6wu_e_) en anglais de la procedure a suivre. C'est un guide temporaire, en attendant que notre communauté rédige un guide spécifique et détaillé !
+MechMerlin (a community member) also did a [great playlist](https://www.youtube.com/watch?v=tx54jkRC9ZY&list=PLZlceRZZjRugJFL-vnenYnDrbMc6wu_e_&index=3) on how to flash it. You can follow that one until I release my own guide for it.
 
-### Besoin d'aide / réclamation / autre ?
+### What's next ?
 
-Si jamais ce tuto n'est pas suffisamment clair, que vous souhaitez y apporter des améliorations ou que vous êtes fan de Christian Clavier, n'hésitez pas à visiter notre [Discord](https://discord.gg/TZ5kBcQ), on sera heureux de vous accueillir ! 💪🏻🎉
+If you have some questions, remarks or suggestions, feel free to hit me up on Twitter [@kissu_io](https://twitter.com/kissu_io) or send me at [hello@kissu.io](mailto:hello@kissu.io) ! 👍
 
-
-
-
-
------
-
------
-##### Todo
-- [ ] make better photos ? (light, crop, more indications)
-- [ ] re-read myself
-- [ ] add some photos ?
-- [ ] fix some mistakes (add more lube on stab wires ?) vu que c'est mon premier build
+On my part, I will soon release some other guides on:
+- [ ] properly & simply installing QMK on any OS
+- [ ] silencing your whole keyboard to make it even more silent
+- [ ] introduction to some advances QMK features
