@@ -1,8 +1,8 @@
 ---
 title: How to build a mech keyboard
-date: 2019-04-17
+date: 2019-10-09
 published: true
-tags: ['Misc']
+tags: ['Mech keebs']
 cover_image: https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
 description: "We will see how to build your first mechanical keyboard"
 ---
@@ -14,29 +14,6 @@ So, this blog post will be about how to build a mech keyboard.
 Meanwhile, you do somehow need to understand some basics about mech keyboards.
 
 That's why, until I do write one, I can recommend the one done by [Drop](https://drop.com/talk/2784/mechanical-keyboards-101-an-introduction-to-the-hobby).
-
-# Table of contents
-- [How to build your first mech keyboard](#how-to-build-your-first-mech-keyboard)
-- [Table of contents](#table-of-contents)
-  - [Get the parts](#get-the-parts)
-  - [Presentation des composants](#presentation-des-composants)
-    - [Switchs](#switchs)
-      - [Quick reminder of our build](#quick-reminder-of-our-build)
-    - [Quick overview of the PCB](#quick-overview-of-the-pcb)
-  - [Checking the PCB](#checking-the-pcb)
-  - [Time to build](#time-to-build)
-    - [Clipping the switches](#clipping-the-switches)
-    - [Modding the stabs (or _stabilizers_)](#modding-the-stabs-or-stabilizers)
-      - [[Optionnal but highly recommended] Clip + lube](#optionnal-but-highly-recommended-clip--lube)
-      - [[Optional] Band-aid](#optional-band-aid)
-  - [Final rush](#final-rush)
-    - [Putting all the switches in place](#putting-all-the-switches-in-place)
-    - [Mounting it into the case](#mounting-it-into-the-case)
-    - [Keycaps](#keycaps)
-  - [Result 💮](#result-%f0%9f%92%ae)
-  - [Misc stuff](#misc-stuff)
-    - [How to flash your PCB ?](#how-to-flash-your-pcb)
-    - [What's next ?](#whats-next)
 
 ## Get the parts
 **Disclaimer**: So, the initial thing will be to fetch the needed components. For that, I've already did the job of choosing something decent. Take note that price-wise, you can start at 150$ and go beyond 1000$.
@@ -96,8 +73,6 @@ All of those may be available with free shipping and be delivered within busines
 ![Case + Sortbothane + PCB + Plate](build-kb/requirements.jpg)
 ![Remaning tools](build-kb/requirements2.jpg)
 > This is pretty much all the things that you will need.
-
-## Presentation des composants
 
 ### Switchs
 The most important thing of course.
@@ -329,9 +304,9 @@ Il y a peut-être d'autres moyens + propres. Mais dans tous les cas, cela reste 
 > Same as before, put the reamining keycaps in place by pressing them firmly. Try to respect the `rows` too ! Indeed, the row of `QWERTY` and ``` `12345 ``` have some specific profile, and as so, you cannnot interchange them or you will have a hell of a strange typing experience.
 
 ## Result 💮
-![Clavier de face](build-kb/finish1.jpg)
-![Profil du clavier](build-kb/finish2.jpg)
-![Joli 60%](build-kb/finish3.jpg)
+![Front keyboard](build-kb/result.jpg)
+![Sideways keyboard](build-kb/sideways_result.jpg)
+![Beautiful 60%](build-kb/result_60.jpg)
 > Congratz for your first build ! 🎊
 
 ## Misc stuff
