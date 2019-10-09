@@ -45,7 +45,7 @@
 export default {
   data() {
     return {
-      darkTheme: false,
+      darkTheme: true,
     }
   },
   methods: {
@@ -53,7 +53,7 @@ export default {
       this.darkTheme = !this.darkTheme
 
       // This is using a script that is added in index.html
-      window.__setPreferredTheme(this.darkTheme ? 'dark' : 'light')
+      window.__setPreferredTheme(this.darkTheme ? 'light' : 'dark')
     },
   },
   mounted() {
