@@ -47,3 +47,4 @@ why not soldering
 check some more feedback on Discord (https://discordapp.com/channels/364402715545174027/597815028715880468/600917537487716352)
 bring back the table of content ?
 check why the other 2 images on the results section is not working...
+check how to link local image for the cover image
